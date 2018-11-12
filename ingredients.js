@@ -17,3 +17,11 @@ for (let index = ingredients.length-1; index >= 0; index--) {
     console.log(ingredients[index]);
     
 }
+
+function lastIndexOf(arr, item){
+    let lastIndex = -1;
+    arr.forEach((el,i) =>{
+      lastIndex = el === item ? i : lastIndex;
+    })
+    return lastIndex;
+  }
